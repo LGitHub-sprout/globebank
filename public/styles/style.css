@@ -1,0 +1,24 @@
+* {
+	box-sizing: border-box;
+}
+
+.page {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.content,
+header,
+footer {
+	border: solid .75px magenta;
+}
+.content {
+	height: 70vh;
+	margin: 1em 0;
+}
+header {
+	padding: 1em;
+}
+footer p {
+	text-align: center;
+}
