@@ -1,18 +1,21 @@
 <?php
+// Turn on output buffering
+// @link https://www.php.net/manual/en/function.ob-start.php
+ob_start();
+
 // define( 'PRIVATE_PATH', dirname( __FILE__ ) );
 // define( 'PROJECT_PATH', dirname( PRIVATE_PATH ) );
 // define( 'PUBLIC_PATH', PROJECT_PATH . '/public' );
 // define( 'SHARED_PATH', PRIVATE_PATH . '/shared' );
 
+// Assign file paths to PHP constants
 define( 'PROJECT_PATH', dirname( __DIR__ ) );
 define( 'PRIVATE_PATH', PROJECT_PATH . '/private' );
 define( 'SHARED_PATH', PRIVATE_PATH . '/shared' );
 define( 'PUBLIC_PATH', PROJECT_PATH . '/public' );
 
-
-
 /**
- * Code relative path to the URL for linking purposes
+ * Code a relative path to the URL for linking purposes
  *
  * super globals:
  * array containing info such as headers, paths, script locations.
@@ -30,7 +33,7 @@ define( 'PUBLIC_PATH', PROJECT_PATH . '/public' );
  * 	Can set a hardcoded value:
  * 	define( 'ROOT', 'http://globebank:8888/public/')
  *		// perhaps for a production machine?
- *		// don't understand. does it work in production? 
+ *		// does this work in production? 
  * 		define( 'ROOT', '' ); // doesn't work on MAMP local
  */
 // my solution

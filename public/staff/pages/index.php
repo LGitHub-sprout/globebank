@@ -1,14 +1,15 @@
 <?php require_once '../../../private/initialize.php'; ?>
 <?php $page_title = 'Pages'; ?>
-<?php // include SHARED_PATH . '/staff_header.php'; ?>
-<?php get_header(); ?>
+<?php include SHARED_PATH . '/staff_header.php'; ?>
 
 <div class="page">
 
-	<div class="content">
+	<div id="content">
 
-		<p><a href="https://www.wnyc.org/story/covid-19-vaccine-will-it-protect-against-new-variants-and-do-you-need-a-2nd-dose">WNYC article on covid vaccines</a></p>
-		
+		<div class="">
+			<h2>Pages</h2>
+		</div>
+
 	</div><!-- .content -->
 	
 </div><!-- .page -->
